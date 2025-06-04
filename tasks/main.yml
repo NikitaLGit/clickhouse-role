@@ -35,7 +35,7 @@
     echo: true
 
 - name: Clickhouse | Create database
-  ansible.builtin.command: "clickhouse-client -q 'create database logs;'"
+  ansible.builtin.command: "clickhouse-client -q 'create database {{ database_name }};'"
   register: create_db
   failed_when: create_db.rc != 0 and create_db.rc != 82
   changed_when: create_db.rc == 0
