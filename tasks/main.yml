@@ -45,7 +45,7 @@
 
 - name: Clickhouse | Create tables for nginx logs
   ansible.builtin.template:
-    src: templates/vector/nginx_logs_tables.sql.j2
+    src: templates/nginx_logs_tables.sql.j2
     dest: /tmp/nginx_logs_tables.sql
     mode: '0644'
   tags:
