@@ -1,4 +1,6 @@
 galaxy_info:
+  role_name: clickhouse
+  namespace: lns
   author: Nikita Leonov
   description: This role for clickhouse install
   company: GKU SSPK
